@@ -20,7 +20,7 @@ int main()
 	cin >> angle1;
 
 	cout << "\n";
-	double side3 = sqrt(pow(side1, 2) + pow(side2, 2) - 2 * side1 * side2 * cos(angle1)); //side 3 from user input (why the fuck does it come out in radians)
+	double side3 = sqrt(pow(side1, 2) + pow(side2, 2) - 2 * side1 * side2 * cos(angle1)); //side 3 from user input (why the fuck does it come out in radians..)
 	cout << "Length of third side: " << side3 << "\n";
 	
 	cout << "\n";
