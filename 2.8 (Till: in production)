@@ -22,16 +22,19 @@ int main()
 
 	double change = paid - cost;
 	cout << "Your change is: $" << change << "\n";
-	double pennies = change * 100;
-	int pennies_Dollars = pennies; //your hint is shit
-	double pennies_Quarters = pennies - pennies_Dollars;
+	
+	int dollars = change;
+	cout << "Here is " << dollars << " dollars \n";
 
+/*
 
-	cout << "Here is " << dollars << " dollars \n"
-		<< quarters << " quarters \n"
-		<< dimes << " dimes \n"
-		<< nickels << " nickels and \n"
-		<< pennies << " pennies. \n";
+	int quarters = double(change - dollars) % 0.25; //syntax issue
+	double dollars = change - int(change);
+	double quarters = dollars * 100;
+	int pennies_Dollars = pennies;
+	double pennies_Dollars = pennies_Dollars % 100
+
+*/
 
 	return 0;
 }
