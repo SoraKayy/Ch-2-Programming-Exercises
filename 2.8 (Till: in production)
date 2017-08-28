@@ -23,16 +23,15 @@ int main()
 	double change = paid - cost;
 	cout << "Your change is: $" << change << "\n";
 
-	double pennies = change * 100; //change in pennies
+	double pennies = change * 100; //change converted to pennies
 
-	int dollars = pennies / 100;
+	int dollars = pennies / 100; //receive dollar amt
 	cout << "Here is " << dollars << " dollars \n";
 
-	double quarters = pennies - dollars;
-	quarters = fmod(quarters, 0.25); //this might not work either
+	double quarters = pennies - dollars; //$0.xx
+	int quarters = quarters / 0.25; //doing this would leave me with a whole # and erase the change
 	cout << "Here is " << quarters << " quarters \n";
-
-	double dimes = 
 	
 	return 0;
 }
+
