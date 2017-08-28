@@ -22,19 +22,17 @@ int main()
 
 	double change = paid - cost;
 	cout << "Your change is: $" << change << "\n";
-	
-	int dollars = change;
+
+	double pennies = change * 100; //change in pennies
+
+	int dollars = pennies / 100;
 	cout << "Here is " << dollars << " dollars \n";
 
-/*
+	double quarters = pennies - dollars;
+	quarters = fmod(quarters, 0.25); //this might not work either
+	cout << "Here is " << quarters << " quarters \n";
 
-	int quarters = double(change - dollars) % 0.25; //syntax issue
-	double dollars = change - int(change);
-	double quarters = dollars * 100;
-	int pennies_Dollars = pennies;
-	double pennies_Dollars = pennies_Dollars % 100
-
-*/
-
+	double dimes = 
+	
 	return 0;
 }
