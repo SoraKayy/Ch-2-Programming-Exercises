@@ -26,4 +26,4 @@ int main()
 	return 0;
 }
 
-// There is no difference between integers and floating point without a specified decimal? It might compile differently on Cygwin
+//Decimals won't show up on double unless it has to
